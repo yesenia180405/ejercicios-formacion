@@ -1,2 +1,2 @@
 # ejercicios-formacion
-Ejercicios de formación relacionados con JS
+Ejercicios relacionados a las tecnologías que se van a utilizar como js y ts
