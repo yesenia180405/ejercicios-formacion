@@ -19,7 +19,7 @@ function sayHi() {
   console.log("Hola desde sayHi!");
 } 
 
-//
+//En este caso el resultado muestra el mensaje de la función de una manera correcta
 function sayBye() {
   console.log("Adios desde sayBye!");
 }
