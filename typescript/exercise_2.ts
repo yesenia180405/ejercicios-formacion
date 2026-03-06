@@ -1,17 +1,4 @@
-//Creación del type animal
-type Animal = {
-  name: string;
-  canEat: "Yes" | "No";
-  canDrink: "Yes" | "No";
-  canSleep: "Yes" | "No";
-  canFly: "Yes" | "No";
-};
-
-//Creación del type mascota con datos del type Animal
-type Mascota = Animal & {
-  race: "Husky" | "Labrador" | "Chucho";
-  age: number;
-};
+import type { Animal, Mascota } from "./exercise_1";
 
 //Creación del objeto bird
 const bird: Animal = {
