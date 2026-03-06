@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --nav-color: rgb(21, 122, 255);
+  --font-size-h1: 46px;
+  --font-size-h2: 36px;
+  --font-size-h3: 26px;
+  --font-type: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --color-title: white;
+  --color-h2: rgb(122, 0, 170);
+  --color-h3: rgb(53, 53, 179);
+  --color-button: rgb(0, 212, 71);
+  --transition-color: rgb(40, 155, 79);
+  --transition-text: 50px;
+  --button-m-py: 15px;
+  --button-m-px: 7px;
+  --button-m-font-size: 18px;
+  --button-xs-py: 10px;
+  --button-xs-px: 6px;
+  --button-xs-font-size: 10px;
+}
+
+.header__h1 {
+  background-color: var(--nav-color);
+  color: var(--color-title);
+  height: 85px;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0;
+  font-family: var(--font-type);
+  font-size: var(--font-size-h1);
+}
+
+.section {
+  padding-left: 25px;
+  font-family: var(--font-type);
+}
+
+.section__h2 {
+  font-size: var(--font-size-h2);
+  color: var(--color-h2);
+  transition-property: font-size;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.section__h2:hover {
+  font-size: var(--transition-text);
+}
+
+.section__h3 {
+  font-size: var(--font-size-h3);
+  color: var(--color-h3);
+}
+
+.section__button {
+  background-color: var(--color-button);
+  font-size: var(--button-m-font-size);
+  padding: var(--button-m-px) var(--button-m-py);
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.section__button:hover {
+  background-color: var(--color-button-hover); 
+}
+
+.section__button--xs {
+  font-size: var(--button-m-font-size);
+  padding: var(--button-m-px) var(--button-m-py);
+
+  transition-property: padding, font-size;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.section__button--xs:hover {
+  font-size: var(--button-xs-font-size);
+  padding: var(--button-xs-px) var(--button-xs-py);
+}
