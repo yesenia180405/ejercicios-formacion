@@ -1,22 +1,18 @@
+import type { Animal, Mascota } from "./exercise_1";
 //Creación del type animal
-type Animal = {
-  name: string;
+type Animales = Animal & {
   color: string;
-  canEat: "Yes" | "No";
-  canDrink: "Yes" | "No";
-  canSleep: "Yes" | "No";
-  canFly: "Yes" | "No";
 };
 
 //Creación del type mascota con datos del type Animal
-type Mascota = Animal & {
+type Mascotas = Animales & {
   //Permitir solo estos tres tipo se razas
   race: "Husky" | "Labrador" | "Chucho";
   age: number;
 };
 
 //Creación del objeto bird
-const bird: Animal = {
+const bird: Animales = {
   name: "Periko",
   color: "Blue",
   canEat: "Yes",
@@ -26,7 +22,7 @@ const bird: Animal = {
 };
 
 //Creación del objeto dog
-const dog: Mascota = {
+const dog: Mascotas = {
   name: "Zeus",
   color: "Brown",
   canEat: "Yes",
@@ -38,10 +34,10 @@ const dog: Mascota = {
 };
 
 //Usar solo los datos name, color canSleep
-type MascotaFelina = Pick<Mascota, "name" | "color" | "canSleep">;
+type MascotaFelina = Pick<Mascotas, "name" | "color" | "canSleep">;
 
 //Omitir los demas datos y solo usar canEat, CanDrink,CanSleep
-type AnimalSalvaje = Omit<Animal, "name" | "color" | "canFly">;
+type AnimalSalvaje = Omit<Animales, "name" | "color" | "canFly">;
 
 //Creación de los objetos cat y Snake
 const cat: MascotaFelina = {

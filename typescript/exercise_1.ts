@@ -1,5 +1,5 @@
 //Creación del type animal
-type Animal = {
+export type Animal = {
   name: string;
   canEat: "Yes" | "No";
   canDrink: "Yes" | "No";
@@ -8,7 +8,7 @@ type Animal = {
 };
 
 //Creación del type mascota con datos del type Animal
-type Mascota = Animal & {
+export type Mascota = Animal & {
   race: string;
   age: number;
 };
