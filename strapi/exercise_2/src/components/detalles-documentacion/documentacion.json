@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_detalles_documentacion_documentacions",
+  "info": {
+    "displayName": "documentacion"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

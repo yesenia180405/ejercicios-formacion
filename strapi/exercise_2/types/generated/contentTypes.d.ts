@@ -478,6 +478,13 @@ export interface ApiEventoEvento extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     description: Schema.Attribute.String;
     details: Schema.Attribute.Component<'detalles-info.detalles-evento', true>;
+    documents: Schema.Attribute.DynamicZone<
+      [
+        'detalles-documentacion.documentacion',
+        'detalles-documentacion.galeria-imagenes',
+        'detalles-documentacion.links',
+      ]
+    >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
