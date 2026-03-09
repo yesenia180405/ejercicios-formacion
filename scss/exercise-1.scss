@@ -1,0 +1,56 @@
+$color-h1: rgb(122, 0, 170);
+$color-h2: rgb(231, 182, 108);
+$color-h3: rgb(170, 0, 113);
+$color-button: rgb(139, 255, 93);
+$font-size-h1: 2.8em;
+$font-size-h2: 2.25em;
+$font-size-h3: 1.62em;
+$button-m-py: 0.94em;
+$button-m-px: 0.4em;
+$button-m-font-size: 1.128em;
+$font-type: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$button-xs-py: 0.625em;
+$button-xs-px: 0.375em;
+$button-xs-font-size: 0.625em;
+
+h1 {
+  color: $color-h1;
+  text-align: center;
+  padding-top: 0.625em;
+  margin: 0;
+  font-family: $font-type;
+  font-size: $font-size-h1;
+}
+
+h2 {
+  font-size: $font-size-h2;
+  font-family: $font-type;
+  color: $color-h2;
+  transition-property: font-size;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+h2:hover {
+  font-size: $font-size-h1;
+}
+
+h3 {
+  font-family: $font-type;
+  font-size: $font-size-h3;
+  color: $color-h3;
+}
+
+.button {
+  background-color: $color-button;
+  font-size: $button-m-font-size;
+  padding: $button-m-px $button-m-py;
+  transition-property: padding, font-size;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.button:hover {
+  font-size: $button-xs-font-size;
+  padding: $button-xs-px $button-xs-py;
+}
