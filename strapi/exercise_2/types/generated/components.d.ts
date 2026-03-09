@@ -12,6 +12,42 @@ export interface DetallesClaseDetallesClase extends Struct.ComponentSchema {
   };
 }
 
+export interface DetallesDocumentacionDocumentacion
+  extends Struct.ComponentSchema {
+  collectionName: 'components_detalles_documentacion_documentacions';
+  info: {
+    displayName: 'documentacion';
+  };
+  attributes: {
+    content: Schema.Attribute.Blocks;
+  };
+}
+
+export interface DetallesDocumentacionGaleriaImagenes
+  extends Struct.ComponentSchema {
+  collectionName: 'components_detalles_documentacion_galeria_imagenes';
+  info: {
+    displayName: 'galeria-imagenes';
+  };
+  attributes: {
+    media: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+  };
+}
+
+export interface DetallesDocumentacionLinks extends Struct.ComponentSchema {
+  collectionName: 'components_detalles_documentacion_links';
+  info: {
+    displayName: 'links';
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    url: Schema.Attribute.Text;
+  };
+}
+
 export interface DetallesInfoDetallesEvento extends Struct.ComponentSchema {
   collectionName: 'components_detalles_info_detalles_evento_s';
   info: {
@@ -41,6 +77,9 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'detalles-clase.detalles-clase': DetallesClaseDetallesClase;
+      'detalles-documentacion.documentacion': DetallesDocumentacionDocumentacion;
+      'detalles-documentacion.galeria-imagenes': DetallesDocumentacionGaleriaImagenes;
+      'detalles-documentacion.links': DetallesDocumentacionLinks;
       'detalles-info.detalles-evento': DetallesInfoDetallesEvento;
       'profesores-info.detalles-profesor': ProfesoresInfoDetallesProfesor;
     }

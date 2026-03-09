@@ -27,6 +27,14 @@
       "relation": "manyToMany",
       "target": "api::profesor.profesor",
       "inversedBy": "eventos"
+    },
+    "documents": {
+      "type": "dynamiczone",
+      "components": [
+        "detalles-documentacion.documentacion",
+        "detalles-documentacion.galeria-imagenes",
+        "detalles-documentacion.links"
+      ]
     }
   }
 }

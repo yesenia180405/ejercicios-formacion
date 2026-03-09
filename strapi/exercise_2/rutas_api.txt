@@ -1,0 +1,8 @@
+Ruta con filtro de evento
+http://localhost:1337/api/eventos?filters[title][$eq]=Clases&populate=profesors
+
+Ruta con filtro de fecha
+http://localhost:1337/api/eventos?filters[details][start_date][$eq]=2026-03-10
+
+Ruta que muestre los eventos dinámicos
+http://localhost:1337/api/clases?&populate[details]=*

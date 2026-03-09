@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_detalles_documentacion_links",
+  "info": {
+    "displayName": "links"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}
