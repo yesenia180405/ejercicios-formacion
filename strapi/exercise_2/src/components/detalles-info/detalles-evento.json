@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_detalles_info_detalles_evento_s",
+  "info": {
+    "displayName": "detalles-evento ",
+    "icon": "information"
+  },
+  "options": {},
+  "attributes": {
+    "start_date": {
+      "type": "date"
+    },
+    "place": {
+      "type": "string"
+    },
+    "Modality": {
+      "type": "enumeration",
+      "enum": [
+        "Virtual",
+        "In_person"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_detalles_clase_detalles_clases",
+  "info": {
+    "displayName": "detalles-clase",
+    "icon": "information"
+  },
+  "options": {},
+  "attributes": {
+    "horario": {
+      "type": "string"
+    },
+    "aula": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -430,13 +430,12 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
-<<<<<<< Updated upstream
-export interface ApiBookBook extends Struct.CollectionTypeSchema {
-  collectionName: 'books';
+export interface ApiClaseClase extends Struct.CollectionTypeSchema {
+  collectionName: 'clases';
   info: {
-    displayName: 'Books';
-    pluralName: 'books';
-    singularName: 'book';
+    displayName: 'Clases';
+    pluralName: 'clases';
+    singularName: 'clase';
   };
   options: {
     draftAndPublish: true;
@@ -445,9 +444,50 @@ export interface ApiBookBook extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    description: Schema.Attribute.Text;
+    details: Schema.Attribute.Component<'detalles-clase.detalles-clase', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<'oneToMany', 'api::book.book'> &
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::clase.clase'> &
       Schema.Attribute.Private;
+    profesors: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::profesor.profesor'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    start_date: Schema.Attribute.Date;
+    title: Schema.Attribute.String & Schema.Attribute.Unique;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiEventoEvento extends Struct.CollectionTypeSchema {
+  collectionName: 'eventos';
+  info: {
+    displayName: 'Evento';
+    pluralName: 'eventos';
+    singularName: 'evento';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.String;
+    details: Schema.Attribute.Component<'detalles-info.detalles-evento', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::evento.evento'
+    > &
+      Schema.Attribute.Private;
+    profesors: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::profesor.profesor'
+    >;
     publishedAt: Schema.Attribute.DateTime;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
@@ -456,8 +496,42 @@ export interface ApiBookBook extends Struct.CollectionTypeSchema {
   };
 }
 
-=======
->>>>>>> Stashed changes
+export interface ApiProfesorProfesor extends Struct.CollectionTypeSchema {
+  collectionName: 'profesores';
+  info: {
+    displayName: 'Profesor';
+    pluralName: 'profesores';
+    singularName: 'profesor';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    clases: Schema.Attribute.Relation<'manyToMany', 'api::clase.clase'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    details: Schema.Attribute.Component<
+      'profesores-info.detalles-profesor',
+      true
+    >;
+    email: Schema.Attribute.Email;
+    eventos: Schema.Attribute.Relation<'manyToMany', 'api::evento.evento'>;
+    lastname: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::profesor.profesor'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -969,10 +1043,9 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
-<<<<<<< Updated upstream
-      'api::book.book': ApiBookBook;
-=======
->>>>>>> Stashed changes
+      'api::clase.clase': ApiClaseClase;
+      'api::evento.evento': ApiEventoEvento;
+      'api::profesor.profesor': ApiProfesorProfesor;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

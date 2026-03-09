@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_profesores_info_detalles_profesors",
+  "info": {
+    "displayName": "detalles-profesor",
+    "icon": "information"
+  },
+  "options": {},
+  "attributes": {
+    "specialty": {
+      "type": "string"
+    },
+    "experience": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}
