@@ -1,0 +1,58 @@
+$color-h1: rgb(122, 0, 170);
+$color-h2: rgb(231, 182, 108);
+$color-h3: rgb(170, 0, 113);
+$color-button: rgb(139, 255, 93);
+$font-size-h1: 2.8em;
+$font-size-h2: 2.25em;
+$font-size-h3: 1.62em;
+$button-m-py: 0.94em;
+$button-m-px: 0.4em;
+$button-m-font-size: 1.128em;
+$font-type: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$button-l-py: 1.5em;
+$button-l-px: 0.95em;
+$button-l-font-size: 1.5em;
+.header {
+  &__h1 {
+    color: $color-h1;
+    text-align: center;
+    padding-top: 0.625em;
+    margin: 0;
+    font-family: $font-type;
+    font-size: $font-size-h1;
+  }
+}
+
+.section {
+  &__h2 {
+    font-size: $font-size-h2;
+    font-family: $font-type;
+    color: $color-h2;
+    transition-property: font-size;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+  }
+
+  &__h2:hover {
+    font-size: $font-size-h1;
+  }
+
+  &__h3 {
+    font-family: $font-type;
+    font-size: $font-size-h3;
+    color: $color-h3;
+  }
+}
+.section {
+  &__button--l {
+    background-color: $color-button;
+    font-size: $button-m-font-size;
+    padding: $button-m-px $button-m-py;
+    transition: padding 0.5s ease, font-size 0.5s ease;
+
+    &:hover {
+      font-size: $button-l-font-size;
+      padding: $button-l-px $button-l-py;
+    }
+  }
+}
