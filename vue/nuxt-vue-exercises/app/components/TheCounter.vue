@@ -13,11 +13,12 @@ const count = ref(0);
       </div>
 
       <div class="flex justify-center">
-        <button @click="count++" class="bg-green-600 border border-green-700 rounded mr-3 p-1 text-white mt-3">
+        <button v-if="count >= 0 && count <= 10" @click="count++" 
+          class="bg-green-600 border border-green-700 rounded mr-3 p-1 text-white mt-3">
           Incrementar
         </button>
 
-        <button @click="count--" class="bg-red-600 border border-red-700 rounded p-1 text-white mt-3">
+        <button v-if="count>0" @click="count--"  class="bg-red-600 border border-red-700 rounded p-1 text-white mt-3">
           Decrementar
         </button>
       </div>
