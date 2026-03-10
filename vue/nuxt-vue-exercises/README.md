@@ -79,3 +79,9 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 - Se ha creado el poyecto con una estrucctura minimalista, y se ha utilizado el comando :
 `mkdir -p assets/styles components layouts pages stores composables`
 la estructura del proyecto, además se ha creado un reset.css en la carpeta assets
+
+## Ejercicio 2
+- Se ha implementado un componente con props llamado 'PropsTitle'
+
+## Ejercicio 3
+-  Se ha implementado el mismo componente pero con un slot
