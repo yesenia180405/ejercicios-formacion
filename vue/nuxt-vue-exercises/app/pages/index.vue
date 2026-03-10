@@ -4,6 +4,7 @@ const title = 'Nuxt 4 - Vue Exercises'
 
 <template>
   <div>
-    <h1>{{ title }}</h1>
+   <!-- <TheTitle TheTitle prop-title="Ejercicios de Nuxt-Vue"/> -->
+   <TheTitle> Ejercicios de Nuxt</TheTitle>
   </div>
 </template>
