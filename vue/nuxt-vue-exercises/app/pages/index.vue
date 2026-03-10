@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router';
+
 
 const title = 'Nuxt 4 - Vue Exercises'
 </script>
@@ -10,4 +12,5 @@ const title = 'Nuxt 4 - Vue Exercises'
     </h1>
   </nav>
   <TheCounter />
+  <router-link to="/catalogo">Ir a contenido </router-link>
 </template>
