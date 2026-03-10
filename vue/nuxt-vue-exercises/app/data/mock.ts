@@ -16,14 +16,14 @@ export const mockProducts: Product[] = [
     },
     {
         id: 2,
-        image: 'https://images.genius.com/e8c0688c96fd1453836c280b54ac36e8.500x500x1.png',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPe3GMRTBExbYG-vKgUzVuPKeTk37bXH1_QA&s',
         title: 'Arirang',
         description: 'The album centers on the traditional Korean folk song "Arirang," symbolizing the members roots and reflection on their careers',
         price: 28.99
     },
     {
         id: 3,
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPe3GMRTBExbYG-vKgUzVuPKeTk37bXH1_QA&s',
+        image: 'https://images.genius.com/e8c0688c96fd1453836c280b54ac36e8.500x500x1.png',
         title: 'Love Yourselft:Tear',
         description: 'explores the dark, painful, and agonizing aspects of separation and toxic love',
         price: 39.99

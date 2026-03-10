@@ -6,11 +6,9 @@ const title = 'Nuxt 4 - Vue Exercises'
 </script>
 
 <template>
-  <nav class="bg-blue-500 color-white p-5 text-center text-white text-3xl font-bold">
-    <h1>
-      <TheTitle> Ejercicios de Nuxt</TheTitle>
-    </h1>
-  </nav>
+  <NavBar/>
+  <div class="m-5">  
   <TheCounter />
-  <router-link to="/catalogo">Ir a contenido </router-link>
+  <router-link to="/catalogo"><span class="bg-fuchsia-600 border border-fuchsia-700 rounded mr-3 p-1 text-white mt-3">Ir a contenido</span> </router-link>
+</div>
 </template>

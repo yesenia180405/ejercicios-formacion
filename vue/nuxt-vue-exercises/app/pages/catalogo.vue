@@ -1,14 +1,17 @@
 <script setup>
 import { mockProducts } from '~/data/mock';
+import { RouterLink } from 'vue-router';
 </script>
 <template>
-    <ProductCard
-    v-for="product in mockProducts"
-    :key="product.id"
-    :image="product.image"
-    :title="product.title"
-    :description="product.description"
-    :price="product.price"
-    />
-
+    <NavBar />
+    <div class="grid grid-cols-3">
+        <ProductCard 
+        v-for="product in mockProducts" 
+        :key="product.id" 
+        :image="product.image" 
+        :title="product.title"
+        :description="product.description" 
+        :price="product.price" />
+    </div>
+    <router-link to="/home"> Ir a Home </router-link>
 </template>
