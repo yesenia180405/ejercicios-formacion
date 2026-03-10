@@ -6,6 +6,7 @@ var usuario = {
   profesion: "Barro man",
 };
 
+const { nombre, apellido } = usuario;
 console.log(nombreUsuario(usuario));
 
 //He cambiado únicamente el nombre de la variable, ya que en general la función está
@@ -43,6 +44,7 @@ function userPresentation(user) {
   return `Me llamo ${userData(user)} y cobro ${userSalary(user)}€ al año`;
 }
 
+const { name, last, salary } = user;
 // Mostramos la presentación del usuario
 console.log(userPresentation(user));
 
@@ -54,15 +56,15 @@ const user2 = {
   nationality: "Morocco",
 };
 
+const { age, nacionality } = user2;
 //Principalmente aquí lo que he cambiado es el bloque if a un modelo Early Return
-//Para manteber ka legibilidad y facilitar el mantenimiento del código, además he 
+//Para manteber ka legibilidad y facilitar el mantenimiento del código, además he
 //cambiado la comparación del user.age, porque era un string y el dato es un number
 function esExtrangero(user) {
-
   if (user.nationality != "España" && user.age == 30) {
     return "Apto para la ayuda del gobierno";
   }
   return "No es apto para la ayuda del gobierno";
 }
 
-console.log(esExtrangero(user));
+console.log(esExtrangero(user2));

@@ -4,37 +4,37 @@
 
 :root {
   --nav-color: rgb(21, 122, 255);
-  --font-size-h1: 46px;
-  --font-size-h2: 36px;
-  --font-size-h3: 26px;
+  --font-size-h1: 2.87em;
+  --font-size-h2: 2.25em;
+  --font-size-h3: 1.625em;
   --font-type: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --color-title: white;
   --color-h2: rgb(122, 0, 170);
   --color-h3: rgb(53, 53, 179);
   --color-button: rgb(0, 212, 71);
   --transition-color: rgb(40, 155, 79);
-  --transition-text: 50px;
-  --button-m-py: 15px;
-  --button-m-px: 7px;
-  --button-m-font-size: 18px;
-  --button-xs-py: 10px;
-  --button-xs-px: 6px;
-  --button-xs-font-size: 10px;
+  --transition-text: 3.125em;
+  --button-m-py: 0.94em;
+  --button-m-px: 0.4em;
+  --button-m-font-size: 1.128em;
+  --button-xs-py: 0.625em;
+  --button-xs-px: 0.375em;
+  --button-xs-font-size: 0.625em;
 }
 
 .header__h1 {
   background-color: var(--nav-color);
   color: var(--color-title);
-  height: 85px;
+  height: 5.315em;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 0.625em;
   margin: 0;
   font-family: var(--font-type);
   font-size: var(--font-size-h1);
 }
 
 .section {
-  padding-left: 25px;
+  padding-left: 1.56em;
   font-family: var(--font-type);
 }
 
