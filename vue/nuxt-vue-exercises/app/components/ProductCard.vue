@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const props=defineProps({
   image:String,
   title:String,
@@ -8,7 +8,7 @@ const props=defineProps({
 </script>
 
 <template>
-  <img src="image" alt="title">
+  <img :src="image" :alt="title">
   <h2>{{ title }}</h2>
   <p>{{ description }}</p>
   <p>{{ price }}</p>
