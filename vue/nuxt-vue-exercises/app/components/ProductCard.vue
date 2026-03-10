@@ -14,6 +14,6 @@ const props = defineProps({
     <p class="px-5 pt-3"><b>Description: </b>{{ description }}</p>
     <p class="px-5 pt-3"><b>Price: </b>{{ price }}</p>
     <button class="m-5 p-2 bg-green-600 border border-green-700 font-semibold 
-    text-white hover:bg-green-800">Comprar</button>
+    text-white hover:bg-green-800 rounded">Comprar</button>
   </div>
 </template>

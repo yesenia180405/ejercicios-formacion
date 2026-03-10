@@ -13,5 +13,6 @@ import { RouterLink } from 'vue-router';
         :description="product.description" 
         :price="product.price" />
     </div>
-    <router-link to="/home"> Ir a Home </router-link>
+    <router-link to="/home"> <span class="bg-purple-500 p-2 ml-10 text-white font-semibold
+     border border-purple-600 rounded-lg hover:bg-purple-700">Ir a Home</span></router-link>
 </template>

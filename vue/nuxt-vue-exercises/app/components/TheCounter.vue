@@ -5,7 +5,7 @@ const count = ref(0);
 
 <template>
   <div class="flex justify-center m-5">
-    <div class="p-6 flex flex-col items-center border border-gray-400 max-w-sm">
+    <div class="p-6 flex flex-col items-center border border-gray-400 max-w-sm rounded-lg shadow-xl">
       <div>
         <TheTitle>
           <span class="text-2xl font-semibold">Contador</span>
