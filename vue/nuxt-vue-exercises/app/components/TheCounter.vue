@@ -1,6 +1,6 @@
 <script setup>
-const { count, increment, decrement } = useCounter();
-const double = computed(() => count.value * 2); 
+const counter= useCount();
+const double = computed(() => counter.count * 2); 
 </script>
 
 <template>
@@ -11,30 +11,30 @@ const double = computed(() => count.value * 2);
       <TheTitle>
         <span class="text-3xl font-semibold  text-pink-800">Contador</span>
         <div class="text-sm text-gray-600 text-center">
-          <span v-if="count === 0">Estas en el valor mínimo</span>
-          <span v-else-if="count === 10">Estas en el valor máximo</span>
+          <span v-if="counter.count === 0">Estas en el valor mínimo</span>
+          <span v-else-if="counter.count === 10">Estas en el valor máximo</span>
           <span v-else>Estas entre los parámetros adecuados</span>
         </div>
       </TheTitle>
 
       <div class="flex justify-center m-5">
-        <button v-if="count >= 0 && count < 10" @click="increment"
+        <button v-if="counter.count >= 0 && counter.count < 10" @click="counter.increment"
           class="bg-green-600 border border-green-700 rounded mr-3 p-3 text-white mt-3">
           Incrementar
         </button>
 
-        <button v-if="count > 0" @click="decrement"
+        <button v-if="counter.count > 0" @click="counter.decrement"
           class="bg-red-600 border border-red-700 rounded p-3 text-white mt-3">
           Decrementar
         </button>
 
-        <button @click="count = 0" class="bg-yellow-500 border border-yellow-600 rounded p-3 text-white  ml-3 mt-3">
+        <button @click="counter.count = 0" class="bg-yellow-500 border border-yellow-600 rounded p-3 text-white  ml-3 mt-3">
           Resetear
         </button>
       </div>
 
-      <p class="mt-4 text-lg font-semibold" :class="count === 10 ? 'text-green-600 font-semibold' : ''">Contador: {{
-        count
+      <p class="mt-4 text-lg font-semibold" :class="counter.count === 10 ? 'text-green-600 font-semibold' : ''">Contador: {{
+        counter.count
       }}</p>
 
       <div class="mt-5 mb-">
