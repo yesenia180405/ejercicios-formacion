@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const counter= useCount();
 const double = computed(() => counter.count * 2); 
 </script>

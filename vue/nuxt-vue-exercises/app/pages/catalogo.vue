@@ -1,6 +1,5 @@
 <script setup>
 import { mockProducts } from '~/data/mock';
-import { RouterLink } from 'vue-router';
 </script>
 <template>
     <NavBar />
