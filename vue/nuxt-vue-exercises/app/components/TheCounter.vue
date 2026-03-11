@@ -26,7 +26,7 @@ const {count, increment, decrement} =useCounter();
         </button>
       </div>
 
-      <p class="mt-4 text-lg">Contador: {{ count }}</p>
+      <p class="mt-4 text-lg" :class="count==10 ? 'text-green-600 font-semibold' : 'font-semibold'" >Contador: {{ count }}</p>
     </div>
   </div>
 </template>
