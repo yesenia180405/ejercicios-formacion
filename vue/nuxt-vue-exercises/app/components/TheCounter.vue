@@ -1,6 +1,5 @@
 <script setup>
-import { ref } from "vue";
-const count = ref(0);
+const {count, increment, decrement} =useCounter();
 </script>
 
 <template>
@@ -13,12 +12,12 @@ const count = ref(0);
       </div>
 
       <div class="flex justify-center m-5">
-        <button v-if="count >= 0 && count < 10" @click="count++" 
+        <button v-if="count >= 0 && count < 10" @click="increment" 
           class="bg-green-600 border border-green-700 rounded mr-3 p-3 text-white mt-3">
           Incrementar
         </button>
 
-        <button v-if="count>0" @click="count--"  class="bg-red-600 border border-red-700 rounded p-3 text-white mt-3">
+        <button v-if="count>0" @click="decrement"  class="bg-red-600 border border-red-700 rounded p-3 text-white mt-3">
           Decrementar
         </button>
 
