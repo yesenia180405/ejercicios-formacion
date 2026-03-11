@@ -18,14 +18,14 @@
 - Son variables personalizadas en CSS declaradas `--name-var` y usadas mediante `var()` 
 
 ## Diferencias entre v-if y v-show
-- `v-if` elimina el elemento del DOM, al contrario de `v-show` que lo mantiene en el DOM perio lo oculta.
+- `v-if` elimina el elemento del DOM, al contrario de `v-show` que lo mantiene en el DOM pero lo oculta.
 
 ## ¿Cuáles son los valores de falsy?
-- Los valores falsy son `false`, `0`, `-0`,`""`, `null`, `undefined`, `NaN` 
+- Los valores falsy son `false`, `0`, `-0`, `0n`, `""`, `null`, `undefined`, `NaN` 
 
 ## ¿Qué es Nullish Coalescing Operator?
 - Es un operador lógico `??` que permite asignar un valor por defecto a una variable si tiene valores `nullish` (`null`,`undefined`)
 
 ## ¿Para que se utiliza TypeScript?
-- Para añadir tipado a JavaScript, además permite detectar eerores cuando se desarrolla el código , además hacer el código más mantenible y mejorar el autocompletado
+- Para añadir tipado a JavaScript, además permite detectar errores cuando se desarrolla el código , hacer el código más mantenible y mejorar el autocompletado
 
