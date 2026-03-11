@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const props = defineProps({
+const dates = defineProps({
   image: String,
   title: String,
   description: String,
