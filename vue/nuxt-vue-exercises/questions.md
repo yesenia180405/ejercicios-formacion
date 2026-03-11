@@ -1,9 +1,9 @@
 # Preguntas
 ## ¿Qué es un linter?
-- Es una herramienta (Pluggin) que analiza el código en busca de errores, malas prácticas y problemas de estilo sin ejecutarlo
+- Es una herramienta (Plugin) que analiza el código en busca de errores, malas prácticas y problemas de estilo sin ejecutarlo
 
 ## ¿Qué es Husky?
--  Es una herramienta wu permite ejecutar scripts automáticamente antes de hacer un commit o push en Git. Se usa para pasar el linter o test antes de subir el código
+- Es una herramienta que se usa en proyectos para ejecutar scripts automáticamente cuando ocurre algo en Git, como antes de hacer un commit o un push.
 
 ## ¿Qué es la reactividad?
 - Es un sistema que detecta automáticamente cuando cambia un dato y actualiza la interfaz sin necesidad de manipular el DOM manualmente
