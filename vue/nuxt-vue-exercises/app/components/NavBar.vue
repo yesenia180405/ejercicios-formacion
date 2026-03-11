@@ -13,6 +13,7 @@
         class=" text-white font-semibold hover:bg-blue-700 p-5">
         Contenido
       </NuxtLink>
+      
     </div>
   </nav>
 </template>
