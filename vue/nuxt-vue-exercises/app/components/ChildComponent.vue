@@ -7,23 +7,26 @@ function saludar() {
   saludo("saludar", 'Hola desde el componente hijo');
 }
 
-const componentVisible= defineProps(
+const componentVisible = defineProps(
   {
-    visibility:Boolean,
-    customClass:String
+    visibility: Boolean,
+    customClass: String
   }
 );
 </script>
-
 <template>
-  <button @click="saludar" :class="customClass">
-    <slot />
-  </button>
-  <div v-if="componentVisible.visibility">
-  <button @click="visible = !visible" :class="customClass">
-    <slot />
-  </button>
+  <div v-if="!visibility">
+    <button @click="saludar" :class="customClass">
+      <slot />
+    </button>
+  </div>
 
-  <p v-if="visible">{{ saludoPadre }}</p>
-</div>
+  <div v-if="visibility">
+    <button @click="visible = !visible" :class="customClass">
+      <slot />
+    </button>
+
+    <p v-if="visible" class="m-5 pl-3">{{ saludoPadre }}</p>
+  </div>
+
 </template>
