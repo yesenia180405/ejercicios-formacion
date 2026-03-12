@@ -16,4 +16,4 @@ import { mockProducts } from '~/data/mock';
         <TheCounter/>
     </div>
 
-</template>
+</template> 
