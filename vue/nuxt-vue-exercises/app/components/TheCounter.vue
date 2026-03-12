@@ -6,7 +6,7 @@ const double = computed(() => counter.count * 2);
 <template>
   <div class="flex justify-center m-16">
     <div
-      class="p-6 flex flex-col items-center border border-gray-400 rounded-lg w-[25%] h-[20vw] shadow-2xl justify-center">
+      class="p-6 flex flex-col items-center border border-gray-200 rounded-lg w-[25%] h-[20vw] shadow-2xl justify-center">
 
       <TheTitle>
         <span class="text-3xl font-semibold  text-pink-800">Contador</span>
