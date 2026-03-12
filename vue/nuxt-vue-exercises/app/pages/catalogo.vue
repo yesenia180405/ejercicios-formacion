@@ -2,7 +2,6 @@
 import { mockProducts } from '~/data/mock';
 </script>
 <template>
-    <NavBar />
     <div class="grid grid-cols-3">
         <ProductCard 
         v-for="product in mockProducts" 

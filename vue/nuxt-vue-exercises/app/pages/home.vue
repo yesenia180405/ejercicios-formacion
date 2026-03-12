@@ -1,7 +1,6 @@
 <script setup lang="ts">
 </script>
 <template>
-  <NavBar />
   <div class="m-5">
     <p class="pb-5">
       Esta es una compilación de los ejercicios del módulo de Vue 3 + Nuxt 4.
@@ -20,5 +19,4 @@
       <ParentComponent />
     </div>
   </div>
-
 </template>
