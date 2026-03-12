@@ -1,5 +1,8 @@
 <script setup>
 import { mockProducts } from '~/data/mock';
+definePageMeta({
+    layout: 'product'
+});
 </script>
 <template>
     <div class="grid grid-cols-3">

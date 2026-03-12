@@ -5,7 +5,7 @@ import { icons } from '~/data/mock';
   <nav class="bg-purple-400 color-white sticky top-0 w-full
  text-white font-bold flex justify-between items-center items-stretch">
     <NuxtLink to="/home" class=" text-3xl p-5">
-      <TheTitle> Menú</TheTitle>
+      <TheTitle> <h2>Menú</h2></TheTitle>
     </NuxtLink>
 
 
