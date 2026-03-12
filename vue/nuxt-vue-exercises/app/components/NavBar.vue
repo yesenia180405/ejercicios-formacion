@@ -24,10 +24,13 @@ import { icons } from '~/data/mock';
         Catálogo
       </NuxtLink>
 
-      <NuxtLink to="/Productos" class=" text-white font-semibold hover:bg-purple-700 p-5">
+      <NuxtLink to="/productos" class=" text-white font-semibold hover:bg-purple-700 p-5">
         Productos
       </NuxtLink>
 
+      <NuxtLink to="/series-bonitas" class=" text-white font-semibold hover:bg-purple-700 p-5">
+        Series Bonitas
+      </NuxtLink>
     </div>
   </nav>
 </template>
