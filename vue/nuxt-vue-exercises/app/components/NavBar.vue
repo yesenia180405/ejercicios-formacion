@@ -21,7 +21,11 @@ import { icons } from '~/data/mock';
       </NuxtLink>
 
       <NuxtLink to="/catalogo" class=" text-white font-semibold hover:bg-purple-700 p-5">
-        Contenido
+        Catálogo
+      </NuxtLink>
+
+      <NuxtLink to="/Productos" class=" text-white font-semibold hover:bg-purple-700 p-5">
+        Productos
       </NuxtLink>
 
     </div>
